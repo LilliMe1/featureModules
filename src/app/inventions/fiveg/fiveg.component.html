@@ -1,3 +1,17 @@
-<p>
-  fiveg works!
-</p>
+<h1>
+  5g
+</h1>
+<h1>
+  Price: {{price}}
+</h1>
+
+<div class="products-parent">
+  <app-productsx [productDetails]="products" 
+                 *ngFor="let products of dataArray"
+                 (throwData)="catchDataComingFromParent($event)"
+
+                 (removeEvent)="removeFromCart($event)"
+                >
+
+  </app-productsx>
+</div>

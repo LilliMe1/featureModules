@@ -1,0 +1,9 @@
+.p-shell{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 220px;
+    background-color: black;
+    color: #FFF;
+    padding: 20px;
+}

@@ -5,12 +5,15 @@ import { AiComponent } from "./ai/ai.component";
 import { ExtendedRealityComponent } from "./extended-reality/extended-reality.component";
 import { UniversityrelationsComponent } from "./universityrelations/universityrelations.component";
 import { RouterModule } from "@angular/router";
+import { ProductsComponent } from './widgets/products/products.component';
+import { CommonModule } from "@angular/common";
 
 
 @NgModule({
-    declarations: [InventionsComponent, FivegComponent, AiComponent, ExtendedRealityComponent, UniversityrelationsComponent],
+    declarations: [InventionsComponent, FivegComponent, AiComponent, ExtendedRealityComponent, UniversityrelationsComponent, ProductsComponent],
     providers: [],
     imports: [
+      CommonModule,
         RouterModule.forChild([
             {
                 path: '',
